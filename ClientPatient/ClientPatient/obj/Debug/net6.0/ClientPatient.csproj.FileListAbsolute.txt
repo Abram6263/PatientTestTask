@@ -1,0 +1,15 @@
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/bin/Debug/net6.0/ClientPatient
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/bin/Debug/net6.0/ClientPatient.deps.json
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/bin/Debug/net6.0/ClientPatient.runtimeconfig.json
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/bin/Debug/net6.0/ClientPatient.dll
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/bin/Debug/net6.0/ClientPatient.pdb
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.csproj.AssemblyReference.cache
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.AssemblyInfoInputs.cache
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.AssemblyInfo.cs
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.csproj.CoreCompileInputs.cache
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.dll
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/refint/ClientPatient.dll
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.pdb
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ClientPatient.genruntimeconfig.cache
+/Users/abram6263/RiderProjects/ClientPatient/ClientPatient/obj/Debug/net6.0/ref/ClientPatient.dll
