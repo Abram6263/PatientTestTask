@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "b0fef94a-4220-453e-8953-5f35bdd5f1dc",
+		"name": "ApiPatients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19964517"
+	},
+	"item": [
+		{
+			"name": "Search by date",
+			"item": [
+				{
+					"name": "gt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Patient/SearchByDate?dateFilter=gt2015-12-31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Patient",
+								"SearchByDate"
+							],
+							"query": [
+								{
+									"key": "dateFilter",
+									"value": "gt2015-12-31"
+								}
+							]
+						},
+						"description": "Пациенты, родившиеся после указанной даты"
+					},
+					"response": []
+				},
+				{
+					"name": "lt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Patient/SearchByDate?dateFilter=lt2024-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Patient",
+								"SearchByDate"
+							],
+							"query": [
+								{
+									"key": "dateFilter",
+									"value": "lt2024-05-01"
+								}
+							]
+						},
+						"description": "Пациенты родившией до указанной даты"
+					},
+					"response": []
+				},
+				{
+					"name": "eq",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Patient/SearchByDate?dateFilter=eq1968-08-17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Patient",
+								"SearchByDate"
+							],
+							"query": [
+								{
+									"key": "dateFilter",
+									"value": "eq1968-08-17"
+								}
+							]
+						},
+						"description": "Пациенты родившееся в указанную дату"
+					},
+					"response": []
+				},
+				{
+					"name": "ap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Patient/SearchByDate?dateFilter=ap2018-06-15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Patient",
+								"SearchByDate"
+							],
+							"query": [
+								{
+									"key": "dateFilter",
+									"value": "ap2018-06-15"
+								}
+							]
+						},
+						"description": "Пациенты родившиеся примерно в указанную дату (+- 7 дней)"
+					},
+					"response": []
+				},
+				{
+					"name": "ne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Patient/SearchByDate?dateFilter=ne2018-06-15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Patient",
+								"SearchByDate"
+							],
+							"query": [
+								{
+									"key": "dateFilter",
+									"value": "ne2018-06-15"
+								}
+							]
+						},
+						"description": "Все пациенты кроме рожденных в указанную дату"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Patient by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Patient/GetPatient/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Patient",
+						"GetPatient",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": {\n    \"id\": \"3fa93f26-5759-4522-b3fc-1c963f66afa6\",\n    \"use\": \"official\",\n    \"family\": \"Иванов\",\n    \"given\": [\n      \"Иван\",\"Иванович\"\n    ]\n  },\n  \"gender\": \"male\",\n  \"birthDate\": \"2023-04-11T15:11:55\",\n  \"active\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Patient/CreatePatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Patient",
+						"CreatePatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update patient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": {\n        \"id\": \"b6a166a8-d959-40fb-85aa-7849e24e6cc8\",\n        \"use\": \"official\",\n        \"family\": \"Луневский\",\n        \"given\": [\n            \"Андрей\",\n            \"Петрович\"\n        ]\n    },\n    \"gender\": \"male\",\n    \"birthDate\": \"1969-01-07T07:19:57Z\",\n    \"active\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Patient/UpdatePatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Patient",
+						"UpdatePatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete patient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Patient/DeletePatient/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Patient",
+						"DeletePatient",
+						"16"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
